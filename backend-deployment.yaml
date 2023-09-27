@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: carlme96/ass2:backend
+          image: carlme96/noteapp:backend
           env:
             - name: DB_HOST
               value: mysql

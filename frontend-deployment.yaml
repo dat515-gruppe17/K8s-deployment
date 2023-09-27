@@ -16,17 +16,17 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: carlme96/ass2:frontend
+          image: carlme96/noteapp:frontend
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 5173
           readinessProbe:
             tcpSocket:
-              port: 80
+              port: 5173
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             tcpSocket:
-              port: 80
+              port: 5173
             initialDelaySeconds: 15
             periodSeconds: 20
