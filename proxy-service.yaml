@@ -1,8 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: proxy
+  name: proxy-svc
 spec:
+  type: LoadBalancer
   selector:
     app: proxy
   ports:
