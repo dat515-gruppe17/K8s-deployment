@@ -19,14 +19,14 @@ spec:
           image: carlme96/noteapp:frontend
           imagePullPolicy: Always
           ports:
-            - containerPort: 5173
+            - containerPort: 80
           readinessProbe:
             tcpSocket:
-              port: 5173
+              port: 80
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             tcpSocket:
-              port: 5173
+              port: 80
             initialDelaySeconds: 15
             periodSeconds: 20
