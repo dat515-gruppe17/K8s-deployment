@@ -24,11 +24,11 @@ spec:
           image: carlme96/noteapp:frontend
           imagePullPolicy: Always
           ports:
-            - containerPort: 3000
+            - containerPort: 80
           readinessProbe:
             httpGet:
               path: /
-              port: 3000
+              port: 80
             initialDelaySeconds: 5
             periodSeconds: 5
             successThreshold: 1
